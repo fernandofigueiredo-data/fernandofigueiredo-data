@@ -192,8 +192,8 @@ linkedin  in/fernandofigueiredoalves
 ## `$ git log --stat`
 
 <div align="center">
-<img alt="Estatísticas do GitHub de Fernando Figueiredo" src="https://github-readme-stats.vercel.app/api?username=fernandofigueiredo2201&show_icons=true&hide=stars,issues&hide_border=true&bg_color=00000000&title_color=00E5FF&icon_color=A970FF&text_color=AAB8CC">
-<img alt="Gráfico de atividade de contribuições" src="https://github-readme-activity-graph.vercel.app/graph?username=fernandofigueiredo2201&hide_border=true&bg_color=00000000&color=AAB8CC&line=00E5FF&point=A970FF&area=true">
-<img alt="Animação da cobra percorrendo o gráfico de contribuições" src="https://raw.githubusercontent.com/fernandofigueiredo2201/fernandofigueiredo2201/output/snake-dark.svg">
+<img alt="Estatísticas do GitHub de Fernando Figueiredo" src="https://github-readme-stats.vercel.app/api?username=fernandofigueiredo-data&show_icons=true&hide=stars,issues&hide_border=true&bg_color=00000000&title_color=00E5FF&icon_color=A970FF&text_color=AAB8CC">
+<img alt="Gráfico de atividade de contribuições" src="https://github-readme-activity-graph.vercel.app/graph?username=fernandofigueiredo-data&hide_border=true&bg_color=00000000&color=AAB8CC&line=00E5FF&point=A970FF&area=true">
+<img alt="Animação da cobra percorrendo o gráfico de contribuições" src="https://raw.githubusercontent.com/fernandofigueiredo-data/fernandofigueiredo-data/output/snake-dark.svg">
 </div>
 -->
