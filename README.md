@@ -164,7 +164,7 @@ OUTPUT
 |---|---|---|
 | Python | Curso completo de Python | Curso em Vídeo — Gustavo Guanabara |
 | SQL | CS50's Databases with SQL | Harvard University |
-| Power BI | Microsoft Certified: Power BI Data Analyst Associate | Microsoft |
+| Power BI | Formação em Power BI | Preditiva Analytics |
 | Análise de Dados | Formação Analista de Dados | Asimov Academy |
 | Machine Learning | Machine Learning Specialization | DeepLearning.AI · Stanford University |
 
