@@ -164,7 +164,7 @@ Análise das 1.622 instituições financeiras do IF.data (Banco Central, junho/2
 
 | Ferramenta | O que a análise mostrou |
 |---|---|
-| Excel | O TCB b1 reúne 7,2% das instituições e 73,3% do ativo do sistema |
+| Excel | O TCB b1 (bancos comerciais, múltiplos com carteira comercial e Caixa) reúne 7,2% das instituições e 73,3% do ativo do sistema |
 | SQL | As 5 maiores instituições detêm 52,1% do ativo (58,0% por conglomerado) |
 | Power BI | R$ 19,5 tri em ativos; a média simples do ROE (0,8%) esconde um ROE agregado de 7,52% |
 | Python | As 756 instituições sem agência são cooperativas, não bancos digitais |
