@@ -169,6 +169,47 @@ Análise das 1.622 instituições financeiras do IF.data (Banco Central, junho/2
 | Power BI | R$ 19,5 tri em ativos; a média simples do ROE (0,8%) esconde um ROE agregado de 7,52% |
 | Python | As 756 instituições sem agência são cooperativas, não bancos digitais |
 
+**[Eleições presidenciais no Brasil, 2014–2026](https://github.com/fernandofigueiredo-data/eleicoes-presidenciais-br)** · [ver o site](https://eleicoes-presidenciais-br.vercel.app)
+
+O TSE publica o resultado por zona eleitoral, em arquivos separados por eleição e turno, sem indicadores do município. O projeto liga 8 turnos (340.702 linhas, 5.571 municípios) a população, alfabetização e PIB do IBGE, do arquivo bruto até um site interativo. Os totais conferem com os do TSE nos 8 turnos, e 41 testes automatizados rodam no GitHub Actions.
+
+| Ferramenta | O que o projeto mostra |
+|---|---|
+| Python | Coleta rastreável (SHA-256) e limpeza em modelo estrela |
+| statsmodels | Na regressão ponderada com controle por região e alfabetização, a associação entre dobrar a renda do município e o voto cai de 8,8 para 1,7 ponto percentual e deixa de se distinguir de zero |
+| SQL | Banco relacional em SQLite, com restrições, triggers, funções de janela e views |
+| Power BI | Modelo estrela e 55 medidas DAX |
+| JavaScript | Site com mapa, filtros cruzados e exportação em CSV; 340 de 340 indicadores iguais aos do Power BI |
+
+**[Bilheteria do cinema brasileiro](https://github.com/fernandofigueiredo-data/bilheteria-cinema-brasileiro-analytics)** · [ver o dashboard](https://bilheteria-cinema-brasileiro-analytics.onrender.com) (a primeira visita pode levar cerca de 1 minuto)
+
+O cinema brasileiro voltou ao nível de antes da pandemia? Análise de 60 milhões de registros de bilheteria diária da ANCINE (2014 a setembro de 2026), com pipeline em DuckDB, notebook em pandas e dashboard em Dash. As duas fontes da ANCINE descrevem as mesmas exibições, então cada pergunta usa só uma delas; somá-las duplicaria o público. Comparações com 2026 usam os mesmos meses dos outros anos, e os limites estão declarados: sem preço nem receita nos dados, tudo é associação.
+
+| Pergunta | Achado |
+|---|---|
+| Voltou ao nível de 2019? | Não. Em 2025, 65% do público de 2019 (115 milhões de espectadores contra 178 milhões); de janeiro a setembro de 2026, 77% |
+| É falta de cinema? | Não: 3.595 salas contra 3.601 e 4,39 milhões de sessões contra 4,40 milhões. O que caiu foi o público por sessão, de 40 para 26 pessoas |
+
+**[Power BI Layout Agent](https://github.com/fernandofigueiredo-data/powerbi-layout-agent-automation)**
+
+Plugin do Claude Code que reorganiza o layout de relatórios Power BI (.pbix): grade de 12 colunas, alinhamento e leitura em Z. Só a posição e o tamanho dos visuais mudam; dados, medidas, filtros e formatação ficam intactos, e o resultado vai para uma cópia. A nota de layout mede a aderência às regras do próprio plugin, então 100 prova consistência, não legibilidade, e por isso a conferência final é visual.
+
+| Caso | Resultado |
+|---|---|
+| Exemplo do repositório | Nota de layout de 48,9 para 100; a checagem passa de 1 sobreposição e 18 avisos para zero |
+| Painel IFData (Banco Central), 2 páginas e 18 visuais | Nota de 60,6 para 100; a comparação confirma que só a geometria mudou |
+| Teste no Power BI Desktop | Apareceram problemas que a nota não captura: rótulo da rosca cortado e tabela com 5 linhas em vez de 7. A versão 0.3.1 passou a sinalizar gráficos que encolhem demais |
+
+**[Manual de Análise de Dados](https://github.com/fernandofigueiredo-data/manual-analise-de-dados)** · [ver o site](https://manual-analise-de-dados.vercel.app)
+
+Guia de referência em português que segue a ordem real de um projeto: importar, conhecer, limpar, descrever, explorar, testar, modelar e comunicar. Todo o código é executado na geração do site, e a verificação automática confirma que 10.292 de 10.292 trechos dos materiais de origem estão nas páginas.
+
+| Parte | O que mostra |
+|---|---|
+| Estudo de caso (ANAC) | 2,75 milhões de voos e 238 mil reclamações: cada ponto percentual a mais de voos cancelados acompanha 7,0 reclamações a mais por 100 mil passageiros (IC 95%: 3,0 a 11,0); um ponto a mais de chegadas atrasadas não se distingue de zero, e o teste placebo passa |
+| Machine Learning | 10 notebooks reescritos a partir de exercícios de curso e revisados: 59 problemas registrados e corrigidos, como vazamento de dados e avaliação feita no próprio treino |
+| Qualidade do site | 0 violações de acessibilidade (WCAG 2.2 AA) em 73 páginas e Lighthouse de 98 a 99 em desempenho |
+
 ---
 
 ## `$ cat formacao.md`
